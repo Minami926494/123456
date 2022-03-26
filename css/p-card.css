@@ -1,0 +1,70 @@
+#p-card {
+  position: relative;
+  width: 300px;
+}
+#p-card .card-style {
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+}
+#p-card .card-style .avatar {
+  text-align: center;
+  margin: auto;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  border: side-card-avatar 3px solid;
+}
+#p-card .card-style .avatar img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+#p-card .card-style .name {
+  margin: 10px auto;
+  color: text-font;
+  font-size: 18px;
+}
+#p-card .card-style .descriptions {
+  margin: 10px auto;
+  width: 85%;
+}
+#p-card .card-style .icon-links {
+  width: 85%;
+  margin: 20px auto;
+  padding: 8px 15px;
+  border-top: #cdcdcd solid 1px;
+  border-bottom: #cdcdcd solid 1px;
+}
+#p-card .card-style .icon-links a {
+  color: label-font;
+  font-size: 24px;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+#p-card .card-style .icon-links a:hover {
+  color: #fff;
+  background: default-link;
+}
+#p-card .card-style .icon-links .icon-link {
+  margin: 5px;
+}
+#p-card .card-style .friend-links {
+  margin: 30px auto;
+}
+#p-card .card-style .friend-links .friend-link {
+  margin: 5px auto;
+  text-align: center;
+}
+#p-card .card-style .friend-links .friend-link a {
+  display: inline-block;
+  width: 200px;
+  line-height: 3;
+  color: label-font;
+  font-size: 20px;
+  border-radius: 15px;
+}
+#p-card .card-style .friend-links .friend-link a:hover {
+  background: side-card-button;
+  color: #fff;
+}

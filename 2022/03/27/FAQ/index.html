@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エルフノ図書館 || 常见问题F&amp;Q</title><meta name="robots" content="noindex">
+    <meta name="author" content="明日✿咲葉">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <link rel="icon" href="/avatar.jpg">
+    <link rel="stylesheet" href="/css/antd.min.css">
+    
+    <link rel="stylesheet" href="/css/full-theme.css">
+    
+    <script src="/js/vue.js"></script>
+    <script src="/js/antd.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <div id="loading"
+        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
+        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div
+            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
+            <div id="loadcontent"
+                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#550000; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
+                <div>
+                    <h2>いっらしゃいませ...</h2>
+					<p><br/></p>
+                    <div>
+                        <img src="/dancingkitty.gif" alt="loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout">
+        <transition name="into">
+            <div v-show="show_page" style="display: none;">
+                <div id="menu_show">
+                     
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">エルフノ図書館</span>
+        </a>
+        
+        <a href="/">
+            <span>
+                <a-icon type="home" theme="filled" />
+            </span>
+            <span>首页</span>
+        </a>
+        
+        <a href="/archives">
+            <span>
+                <a-icon type="book" theme="filled" />
+            </span>
+            <span>历史档案</span>
+        </a>
+        
+        <a href="/2022/01/18/FAQ/">
+            <span>
+                <a-icon type="bulb" theme="filled" />
+            </span>
+            <span>常见问题F&amp;Q</span>
+        </a>
+        
+    </div>
+
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div :class="'title'" @click="menu_show=!menu_show">
+            <span style="margin-right: 10px;">
+                <a-icon type="slack" theme="" />
+            </span>
+            <span>エルフノ図書館</span>
+        </div>
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="home" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">首页</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="book" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">历史档案</div>
+                </div>
+            </a>
+            
+            <a href="/2022/01/18/FAQ/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="bulb" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">常见问题F&amp;Q</div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curtain" v-show="menu_show"></div>
+    </div>
+
+</nav>
+                </div>
+
+                <div id="main">
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>常见问题F&amp;Q </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2022/3/27
+        </span>
+
+        
+
+        
+    </div>
+
+    <div class="content" v-pre>
+        <p>Q：为什么我搜索不到相关书籍？<br><a href="####">A：排除图书馆未收录的情况，可能原因有三：</a><br><a href="####">　　①未返回根目录进行搜索</a><br><a href="####">　　②书名的不同版本译名存在差异</a><br><a href="####">　　③书名中的特殊符号未正确输入</a></p>
+<p>Q：遇到以上情况应该怎样解决？<br><a href="####">A：首先搜索前请返回根目录（🏠 /Erufunolibrary/），通过搜索尽量少的关键字来规避译名差异和特殊符号。如果仍无法解决问题还烦请百度完整书名后用其中的关键字再次进行搜索。</a></p>
+<pre><code class="关于关键字搜索">关键字请务必连续，不要让服务器君做填空题。Saki目前的技术力尚无法做出高效的模糊搜索方案。
+</code></pre>
+<p>Q：为什么图书馆会出现403报错？<br><a href="####">A：图书馆为防御爬虫脚本设置了访问间隔，若点击太频繁可能被拒绝访问，刷新一下即可。</a></p>
+<p>Q：为什么图书馆不支持打包下载？<br><a href="####">A：一方面图书馆的服务器带宽较小，生成压缩包会加大服务器负荷；另一方面打包下载会助长爬虫的猖獗，增大管理难度。故现阶段恕暂不提供打包下载，还望见谅。</a></p>
+<p>Q：为什么图书馆的书籍有时会下载失败？<br><a href="####">A：这同样是图书馆的防御措施之一，高频次连续下载会被服务器君判定为非法操作，进而拦截连接导致下载出错。一般情况下应为服务器误判所致，烦请重新进行下载，由此造成的不便还请海涵。</a></p>
+<pre><code class="关于封禁机制">服务器君检测到若干次非法操作后将自动封禁可疑IP，请不要使用爬虫脚本或IDM等带有站点抓取功能的下载器。正常使用不会触发相关机制，敬请放心。
+</code></pre>
+<p>Q：图书馆的账号要如何注册？<br><a href="####">A：图书馆账号系统的主要目的是分离阅览区域和协作者工作区域，故短期内没有开放注册的相关计划。</a></p>
+<p>Q：没有账号对使用的影响有多大？<br><a href="####">A：基本无影响。图书馆绝大部分书籍完全开放，已尽可能满足常规阅读需求。极少部分带有限制及未公开的书籍出于控制传播考虑仅向指定用户开放，大多质量较低或含有过激内容，无需过度拘泥于此。</a></p>
+<h3 id="如有其他疑问请召唤Saki"><a href="#如有其他疑问请召唤Saki" class="headerlink" title="如有其他疑问请召唤Saki~"></a>如有其他疑问请召唤Saki~</h3><!-- flag of hidden posts -->
+    </div>
+
+    
+</div>
+                     
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2020 - 2022 エルフノ図書館
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @明日✿咲葉
+        </div>
+        <div>特别鸣谢：<br/>@倚夢爲馬 ＆ @戴上🎭的我学会微笑い ＆ @星雲</div>
+        
+    </div>
+
+</footer>
+
+<script src="/js/highlight.min.js"></script>
+<script src="/js/particle.js"></script>
+                </div>
+            </div>
+        </transition>
+    </div>
+
+    <script>
+    new Vue({
+        el: "#layout",
+        data: {
+            show_page: false,
+            onload_menu: false,
+            menu_show: false,
+            card_top: 100
+        },
+        created: function () {
+            var that = this
+            window.onload = function () {
+                that.show_page = true
+                document.getElementById("loadcontent").style.opacity = 0
+                setTimeout(function () {
+                    document.getElementById("loadleft").style.width = 0
+                    document.getElementById("loadright").style.width = 0
+                }, 300)
+                setTimeout(function () {
+                    document.getElementById("loading").style = "display:none"
+                }, 600)
+            }
+        },
+        mounted: function () {
+            var that = this
+            window.addEventListener('scroll', function (e) {
+                that.menu_show = false
+            })
+        },
+        methods: {
+            home_click: function () {
+                window.scrollTo({
+                    top: window.innerHeight - 80,
+                    behavior: "smooth",
+                });
+            }
+        }
+    })
+</script>
+
+</body>
+
+</html>

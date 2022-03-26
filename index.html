@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エルフノ図書館 || Erufuno Library</title>
+    <meta name="author" content="明日✿咲葉">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <link rel="icon" href="/avatar.jpg">
+    <link rel="stylesheet" href="/css/antd.min.css">
+    
+    <link rel="stylesheet" href="/css/full-theme.css">
+    
+    <script src="/js/vue.js"></script>
+    <script src="/js/antd.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <div id="loading"
+        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
+        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div
+            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
+            <div id="loadcontent"
+                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#550000; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
+                <div>
+                    <h2>いっらしゃいませ...</h2>
+					<p><br/></p>
+                    <div>
+                        <img src="/dancingkitty.gif" alt="loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout">
+        <transition name="into">
+            <div v-show="show_page" style="display: none;">
+                <div id="menu_show">
+                     
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">エルフノ図書館</span>
+        </a>
+        
+        <a href="/">
+            <span>
+                <a-icon type="home" theme="filled" />
+            </span>
+            <span>首页</span>
+        </a>
+        
+        <a href="/archives">
+            <span>
+                <a-icon type="book" theme="filled" />
+            </span>
+            <span>历史档案</span>
+        </a>
+        
+        <a href="/2022/01/18/FAQ/">
+            <span>
+                <a-icon type="bulb" theme="filled" />
+            </span>
+            <span>常见问题F&amp;Q</span>
+        </a>
+        
+    </div>
+
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div :class="'title'" @click="menu_show=!menu_show">
+            <span style="margin-right: 10px;">
+                <a-icon type="slack" theme="" />
+            </span>
+            <span>エルフノ図書館</span>
+        </div>
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="home" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">首页</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="book" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">历史档案</div>
+                </div>
+            </a>
+            
+            <a href="/2022/01/18/FAQ/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="bulb" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">常见问题F&amp;Q</div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curtain" v-show="menu_show"></div>
+    </div>
+
+</nav>
+                </div>
+
+                <div id="main">
+                    <div id="home-head" style=background-image:url('home.jpg')>
+    <script>
+        var menu = document.getElementById("menu")
+        menu.className += " menu-color"
+    </script>
+     
+    <div id="home-info" class="home-info" @click="home_click">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1>エルフノ図書館</h1>
+                <h3>Erufuno Library</h3>
+                <h5></h5>
+            </div>
+        </span>
+    </div>
+     
+</div>
+
+
+
+<div id="home-posts-wrap" class=>
+    <div id="home-posts">
+
+        <div id="posts">
+            
+
+<div class="post">
+
+    <a href="/2021/12/14/Erufuno/">
+        <h2>
+            致驻足于此的旅人
+        </h2>
+    </a>
+
+    <div class="category-and-date">
+
+        
+
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2021/12/14
+        </span>
+
+    </div>
+
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            
+            <h3 id="幸会，欢迎来到"><a href="#幸会，欢迎来到" class="headerlink" title="幸会，欢迎来到"></a>幸会，欢迎来到</h3><h2 id="「艾尔芙诺图书馆」"><a href="#「艾尔芙诺图书馆」" class="headerlink" title="「艾尔芙诺图书馆」"></a><a href="####">「艾尔芙诺图书馆」</a></h2><p>我是这间图书馆的司书<a href="####">「明日✿咲葉」</a>，爱称是<a href="####">「Saki」</a>不是其他非常感谢✿</p>
+<p>本馆收藏<a href="####">日本轻小说</a>＆<a href="####">轻文学</a>作品，书籍载体主要为<a href="####">ePub电子书</a></p>
+<pre><code class="ePub电子书">一种包含字体、插图和排版版式的电子书格式，可在移动设备上获得类似实体书的阅读体验。
+</code></pre>
+<p>手机食用推荐<a href="https://www.duokan.com/">【多看阅读】</a>,电脑阅读推荐<a href="https://www.neat-reader.cn/">【Neat Reader】</a></p>
+<p>Kindle阅读器可通过电脑使用<a href="https://www.neat-reader.cn/downloads/converter">【Neat Converter】</a>：<br>① 转码为<a href="####">「azw3」</a>格式有线传输导入阅读<br>② 转码为<a href="####">「mobi」</a>格式无线传输导入阅读</p>
+<pre><code class="关于导入">① 有线传输需将文件导入Kindle的&quot;documents&quot;文件夹；
+② 无线传输需使用邮箱将文件发送至自设的Kindle邮箱，Kindle联网后会自动下载。
+</code></pre>
+<p>图书馆宗旨是传播与交流ACGN次文化，<a href="####">不进行任何形式的盈利活动</a></p>
+<p>图书资源源于<a href="https://www.lightnovel.us/">【轻之国度】</a>、<a href="https://www.tsdm39.net/">【天使动漫论坛】</a>、<a href="http://ritdon.com/">【深夜读书会】</a>及各大百度贴吧，均出自网络而非本人所有，请尊重相关工作者的辛勤付出：</p>
+<h2 id="杜绝资源买卖和肆意传播行为！"><a href="#杜绝资源买卖和肆意传播行为！" class="headerlink" title="杜绝资源买卖和肆意传播行为！"></a>杜绝资源买卖和肆意传播行为！</h2><pre><code class="特别声明">将由本馆获取之资源于各大论坛进行二次发布前请先咨询本人以了解授权情况及相关事宜；若本馆活动侵犯了您的权益，请联系本人第一时间进行整改，有冒犯之处本人深感抱歉敬请谅解；若查实使用本馆资源进行盈利行为，将无限期删除相关资源并追究当事者责任，本人声明承担相应责任。
+</code></pre>
+<p>图书馆资源不定期更新且无更新日志，有较大滞后性，若您发现资源更新不及时或有遗漏时可以联系我~<br>同时也欢迎其他各种形式的咨询与交流~只是想聊天杀时间也没问题❤</p>
+<p>另外，本人承接ePub电子书籍的制作，Saki对伙伴的热情当然是Free☆<br>除商业用途外，只要您能够提供完整的文本和插图我都会尽力帮上忙~</p>
+<pre><code class="Saki召唤指南">Saki资料卡上的∣左∣中∣右∣三个图标分别对应∣电脑QQ∣手机QQ∣QQ临时会话∣
+Saki的邮箱是&quot;a-shi-ta_sa-ki-ba@foxmail.com&quot;
+</code></pre>
+<p>如有疑问可以参考<a href="/2022/01/18/FAQ/">常见问题F&amp;Q</a><br>以上，今后也请多多关照~</p>
+
+            
+        </div>
+    </div>
+
+    <div class="post-tags">
+        
+        
+    </div>
+
+    <a href="/2021/12/14/Erufuno/ " class="go-post">
+        领域展开
+    </a>
+</div>
+
+
+             
+<div class="page-current">
+
+    <div class="prev">
+        
+    </div>
+
+    <div class="page-index">
+
+        
+
+        <span class="current">
+            1
+        </span>
+
+        
+
+    </div>
+
+    <div class="next">
+        
+    </div>
+
+</div>
+
+        </div>
+    </div>
+    
+    <div id="home-card">
+        <a-affix :offset-top="card_top">
+    <a-card class="card-style" style="width: 300px">
+        <div class="avatar">
+            <img src="avatar.jpg " alt="头像">
+        </div>
+        <div class="name">
+            明日✿咲葉
+        </div>
+        <div class="descriptions">
+            
+            <div class="description">
+                明日は明日の風が吹くさ。
+            </div>
+            
+        </div>
+        <div class="icon-links">
+            
+            <span class="icon-link">
+                <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1476914340&website=www.oicqzone.com">
+
+                    
+                    <a-icon type="qq"
+                        theme="" />
+                    
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a href="https://qm.qq.com/cgi-bin/qm/qr?k=34IjavpLXFvzNGIlG9_FJpQuHMpGWj0a">
+
+                    
+                    <a-icon type="qq-circle"
+                        theme="filled" />
+                    
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a href="http://sighttp.qq.com/authd?IDKEY=e4a0a9da80dee6373578f186458932ebe3836fa2f6f89ac5">
+
+                    
+                    <a-icon type="message"
+                        theme="filled" />
+                    
+                </a>
+            </span>
+            
+        </div>
+        <div class="friend-links">
+            
+            <div class="friend-link">
+                <a href="http://81.70.28.137">
+                    进入图书馆
+                </a>
+            </div>
+            
+        </div>
+    </a-card>
+</a-affix>
+    </div>
+    
+</div>
+
+<div id="home-posts-wrap" class=>
+    
+    <div id="p-card">
+        <a-affix :offset-top="card_top">
+    <a-card class="card-style" style="width: 300px">
+        <div class="avatar">
+            <img src="avatar.jpg " alt="头像">
+        </div>
+        <div class="name">
+            明日✿咲葉
+        </div>
+        <div class="descriptions">
+            
+            <div class="description">
+                明日は明日の風が吹くさ。
+            </div>
+            
+        </div>
+        <div class="icon-links">
+            
+            <span class="icon-link">
+                <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1476914340&website=www.oicqzone.com">
+
+                    
+                    <a-icon type="qq"
+                        theme="" />
+                    
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a href="https://qm.qq.com/cgi-bin/qm/qr?k=34IjavpLXFvzNGIlG9_FJpQuHMpGWj0a">
+
+                    
+                    <a-icon type="qq-circle"
+                        theme="filled" />
+                    
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a href="http://sighttp.qq.com/authd?IDKEY=e4a0a9da80dee6373578f186458932ebe3836fa2f6f89ac5">
+
+                    
+                    <a-icon type="message"
+                        theme="filled" />
+                    
+                </a>
+            </span>
+            
+        </div>
+        <div class="friend-links">
+            
+            <div class="friend-link">
+                <a href="http://81.70.28.137">
+                    进入图书馆
+                </a>
+            </div>
+            
+        </div>
+    </a-card>
+</a-affix>
+    </div>
+    
+</div>
+                     
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2020 - 2022 エルフノ図書館
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @明日✿咲葉
+        </div>
+        <div>特别鸣谢：<br/>@倚夢爲馬 ＆ @戴上🎭的我学会微笑い ＆ @星雲</div>
+        
+    </div>
+
+</footer>
+
+<script src="/js/highlight.min.js"></script>
+<script src="/js/particle.js"></script>
+                </div>
+            </div>
+        </transition>
+    </div>
+
+    <script>
+    new Vue({
+        el: "#layout",
+        data: {
+            show_page: false,
+            onload_menu: false,
+            menu_show: false,
+            card_top: 100
+        },
+        created: function () {
+            var that = this
+            window.onload = function () {
+                that.show_page = true
+                document.getElementById("loadcontent").style.opacity = 0
+                setTimeout(function () {
+                    document.getElementById("loadleft").style.width = 0
+                    document.getElementById("loadright").style.width = 0
+                }, 300)
+                setTimeout(function () {
+                    document.getElementById("loading").style = "display:none"
+                }, 600)
+            }
+        },
+        mounted: function () {
+            var that = this
+            window.addEventListener('scroll', function (e) {
+                that.menu_show = false
+            })
+        },
+        methods: {
+            home_click: function () {
+                window.scrollTo({
+                    top: window.innerHeight - 80,
+                    behavior: "smooth",
+                });
+            }
+        }
+    })
+</script>
+
+<script>"use strict";if("serviceWorker"in navigator){navigator.serviceWorker.register("service-worker.js").then((function(reg){reg.onupdatefound=function(){var installingWorker=reg.installing;installingWorker.onstatechange=function(){switch(installingWorker.state){case"installed":if(navigator.serviceWorker.controller){console.log("New or updated content is available.")}else{console.log("Content is now available offline!")}break;case"redundant":console.error("The installing service worker became redundant.");break}}}}))["catch"]((function(e){console.error("Error during service worker registration:",e)}))}</script></body></html>
